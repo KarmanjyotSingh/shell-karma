@@ -1,0 +1,20 @@
+clear
+jobs
+vi &
+jobs -a
+jobs -
+make
+clea	
+clear
+vi &
+jobs -
+make
+./shell
+[2;2R[>65;6003;1c]10;rgb:dede/dede/dede]11;rgb:2424/2424/2424
+clear
+ls
+clear
+ls -l
+clear
+ls -l 
+ls -l | wc 
