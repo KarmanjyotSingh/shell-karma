@@ -1,4 +1,4 @@
-# SHELL - Linux Shell in C
+# karma-shell - Linux Shell in C
 ___ 
 
 ## Execution Instructions
