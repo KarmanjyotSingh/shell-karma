@@ -1,4 +1,6 @@
-# karma-shell - Linux Shell in C
+# karma-shell - A Linux Shell in C
+
+## *watch your karma*
 ___ 
 
 ## Execution Instructions
@@ -19,7 +21,7 @@ ___
    
 ## Shell Features
 
-1. The shell supports the following commands being implemented by me : `bg` , `cd` , `echo` , `fg` , `history` , `jobs` , `ls` , `pinfo` , `pwd` , `replay` , `repeat` , `sig` , and other external `shell commands` .
+1. The shell supports the following commands being implemented by me : `bg` , `baywatch` , `cd` , `echo` , `fg` , `history` , `jobs` , `ls` , `pinfo` , `pwd` , `replay` , `repeat` , `sig` , and other external `shell commands` .
 
 2. It with support for `redirection` operations [ `>` , `<` , `>>` ] and `piping` [ `|` ] .
    
@@ -38,6 +40,8 @@ The command implemented are as follows :
 
 - `bg` : used to continue the execution of stopped background processes in the background environment.
 
+- `baywatch` : used to execute the given commands from the list of options `newborn`,`dirty`,`interrupt` after a fixed interval as given input by the user, until <kbd>q</kbd> is pressed. Handles errors and invalid argument kind. enter `baywatch help` for correct `syntax` information.
+  
 - `cd` : To change the current working directory of the shell , it also supports multiple flags like : `-` , `.` , `~` , `..` etc. along with error messages.
   
 - `echo` : To output the input string onto the terminal ,supports `redirection` and `piping`
@@ -50,11 +54,11 @@ The command implemented are as follows :
 
   `history <number>` :  displays the latest `number` history commands.
 
-- `jobs` : A linked list data structure , implemented to keep a track of processes invoked in the background of the shell ( either by the user directly ( using the `&` flag)) or when a process running in foreground is stopped due to recieving of  `signal or interrupt` ( like `Ctrl + Z` or any other signal). 
+- `jobs` : A linked list data structure , implemented to keep a track of processes invoked in the background of the shell ( either by the user directly ( using the `&` flag)) or when a process running in foreground is stopped due to recieving of  `signal or interrupt` ( like <kbd>Ctrl + Z</kbd> or any other signal). 
   
   stores the process sorted lexographically in a linked list structure.
 
-  `jobs` prints the [`job_number`] `process_status` `process_name` `pid` for processes stored in  the data structure. 
+  `jobs` prints the [`job_number`] `process_status` `process_name` `pid` for processes stored in  the data structure. Enter `jobs help` for getting correct `syntax` and list of supported options.
 
   `[-options]` : `-r` and `-s` flags for specifically printing processes with status `Running` or `Stopped` respectively.
 
@@ -72,7 +76,7 @@ The command implemented are as follows :
 
 - `pwd` : outputs the present working directory , handles errors.
   
-- `replay` : 
+- `replay` : executes the given command after fixed `interval` for a given `period` of time. Enter `replay help` for more command `syntax` information.
   
   `Usage :`
 
